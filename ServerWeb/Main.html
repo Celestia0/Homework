@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Web-Server.Main</title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                width: 1000px;
+                margin: auto;
+            }
+            .words{
+                font-size: 1.1em;
+            }
+            .top{
+                width: 1200px; 
+                margin: auto;
+                padding-top: 50px;
+            }
+            form{
+                padding:20px;
+            }
+            .sub{
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="top">
+            <form action="/force_analysis.html" method="POST">
+                <input type="submit" class="sub" value= "I wanna a html force_analysis">
+                <div class="words">you will get the force_analysis.html</div>
+            </form>
+
+            <form action="/force_analysis.jpg" method="POST">
+                <input type="submit" value="a picture of a force_analysis">
+                <div class="words">you will get a picture named force_analysis.jpg</div>
+            </form>
+
+            <form action="/picture/Gandalf.jpg" method="POST">
+                <input type="submit" value="a picture which is not exist">
+                <div class="words">you will get an error message            </form>
+        </div>
+    </body>
+</html>
